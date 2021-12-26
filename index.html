@@ -16,39 +16,59 @@
     <link rel="stylesheet" href="/styles/style.css" />
 
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/3fa41704cb.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/3fa41704cb.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="scripts.js" defer></script>
   </head>
   <body>
-      <div class="mobile-container">
-          <header>
-              <input type="text" name="" id="">
-              <button id="search">Search</button>
-          </header>
-          <div class="fav-container">
-              <h3>Favorite Meals</h3>
-              <ul>
-                  <li><img src="https://www.themealdb.com/images/ingredients/Chicken.png" alt=""><span>Chicken</span></li>
-                  <li><img src="https://www.themealdb.com/images/ingredients/Beef.png" alt=""><span>Beef</span></li>
-                  <li><img src="https://www.themealdb.com/images/ingredients/Pork.png" alt=""><span>Pork</span></li>
-              </ul>
-          </div>
-          <div class="meals">
-              <span class="random">
-                  Random Recipe
-              </span>
-              <div class="meal">
-                  <div class="meal-header">
-                      <img src="https://www.themealdb.com/images/media/meals/1529443236.jpg" alt="">
-                  </div>
-                  <div class="meal-body">
-                      <h4>Szechuan Beef</h4>
-                      <button>
-                          <i class="far fa-heart"></i>
-                      </button>
-                  </div>
-              </div>
-          </div>
+    <div class="mobile-container">
+      <header>
+        <input type="text" name="" id="" />
+        <button id="search"><i class="fas fa-search"></i></button>
+      </header>
+      <div class="fav-container">
+        <h3>Favorite Meals</h3>
+        <ul class="fav-meals">
+          <li>
+            <img
+              src="https://www.themealdb.com/images/ingredients/Chicken.png"
+              alt=""
+            /><span>Chicken</span>
+          </li>
+          <li>
+            <img
+              src="https://www.themealdb.com/images/ingredients/Beef.png"
+              alt=""
+            /><span>Beef</span>
+          </li>
+          <li>
+            <img
+              src="https://www.themealdb.com/images/ingredients/Pork.png"
+              alt=""
+            /><span>Pork</span>
+          </li>
+        </ul>
       </div>
+      <div class="meals">
+        <div class="meal">
+          <div class="meal-header">
+          <span class="random"> Random Recipe </span>
+
+            <img
+              src="https://www.themealdb.com/images/media/meals/1529443236.jpg"
+              alt=""
+            />
+          </div>
+          <div class="meal-body">
+            <h4>Szechuan Beef</h4>
+            <button>
+              <i class="far fa-heart"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
