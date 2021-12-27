@@ -35,11 +35,18 @@ header {
   justify-content: center;
   padding: 1rem;
 
-  input {
+  input{
     background-color: #f1faee;
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 15px;
+    width: 500px;
+    // transition: 0.5s;
+    outline: none;
+
+    &:focus{
+      border: 1px solid #1d3557;
+    }
   }
 
   button {

@@ -54,6 +54,12 @@ header input {
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 15px;
+  width: 500px;
+  outline: none;
+}
+
+header input:focus {
+  border: 1px solid #1d3557;
 }
 
 header button {
