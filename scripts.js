@@ -1,4 +1,5 @@
 const meals = document.getElementById('meals')
+const favoriteContainer = document.getElementById("fav-meals");
 
 getRandomMeal();
 fetchFavMeals();
@@ -18,7 +19,7 @@ async function getMealById(id){
 
     const responseData = await response.json();
 
-    const meal = response.meals[0];
+    const meal = responseData.meals[0];
 
     return meal;
 
@@ -29,7 +30,7 @@ async function getMealsBySearch(term){
 
 }
 
-function addMeal(mealData,random = false){
+function addMeal(mealData, random = false){
     const meal = document.createElement('div');
     meal.classList.add('meal');
 
@@ -103,38 +104,16 @@ async function fetchFavMeals(){
 }
 
 
-function addMealToFav(mealData) {
-  const meal = document.createElement("div");
-  meal.classList.add("meal");
+function addMealFav(mealData) {
+  const favMeal = document.createElement("li");
 
-  meal.innerHTML = `
-          <div class="meal-header">
-          ${random ? `<span class="random"> Random Recipe </span>` : ""}
-
+  favMeal.innerHTML = `
+           
             <img
               src="${mealData.strMealThumb}"
               alt="${mealData.strMeal}"
-            />
-          </div>
-          <div class="meal-body">
-            <h4>${mealData.strMeal}</h4>
-            <button class="fav-btn">
-              <i class="fas fa-heart"></i>
-            </button>
-          </div>
+            /><span>${mealData.strMeal}</span>
     `;
 
-  const btn = meal.querySelector(".meal-body .fav-btn");
-
-  btn.addEventListener("click", () => {
-    if (btn.classList.contains("active")) {
-      removeMealLS(mealData.idMeal);
-      btn.classList.remove("active");
-    } else {
-      addMealLS(mealData.idMeal);
-      ["active", "animate__bounceIn"].map((v) => btn.classList.toggle(v));
-    }
-  });
-
-  meals.appendChild(meal);
+  favoriteContainer.appendChild(favMeal);
 }
