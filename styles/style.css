@@ -56,6 +56,7 @@ header input {
   border-radius: 15px;
   width: 500px;
   outline: none;
+  font-family: inherit;
 }
 
 header input:focus {
@@ -154,9 +155,15 @@ header button {
   margin: 0;
 }
 
-.meal-body button {
+.meal-body .fav-btn {
   border: none;
   font-size: 1.2rem;
   background-color: transparent;
+  color: #cec0c0;
+  cursor: pointer;
+}
+
+.meal-body .fav-btn.active {
+  color: red;
 }
 /*# sourceMappingURL=style.css.map */

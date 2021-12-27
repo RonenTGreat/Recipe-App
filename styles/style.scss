@@ -35,15 +35,16 @@ header {
   justify-content: center;
   padding: 1rem;
 
-  input{
+  input {
     background-color: #f1faee;
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 15px;
     width: 500px;
     outline: none;
+    font-family: inherit;
 
-    &:focus{
+    &:focus {
       border: 1px solid #1d3557;
     }
   }
@@ -96,36 +97,42 @@ header {
 }
 
 .meal-header {
-    position: relative;
+  position: relative;
   img {
-      height: 250px;
-      width: 100%;
-      object-fit: cover;
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
   }
 
-  .random{
-      position: absolute;
-      top: 1rem;
-      background-color: #fff;
-      padding: 0.25rem 1rem;
-      border-top-right-radius: 3px;
-      border-bottom-right-radius: 3px;
+  .random {
+    position: absolute;
+    top: 1rem;
+    background-color: #fff;
+    padding: 0.25rem 1rem;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
   }
 }
 
 .meal-body {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
 
-    h4{
-        margin: 0;
-    }
+  h4 {
+    margin: 0;
+  }
 
-    button{
-        border: none;
-        font-size: 1.2rem;
-        background-color: transparent;
+  .fav-btn {
+    border: none;
+    font-size: 1.2rem;
+    background-color: transparent;
+    color: rgb(206, 192, 192);
+    cursor: pointer;
+
+    &.active {
+      color: red;
     }
+  }
 }
