@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recipe App</title>
 
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
     <!-- Favicon -->
     <link
       href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANPh9UBsnt//weTz/8Hk8//B5PP/wOTz/7Xb7/+jrtqPAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8PD4EICt2v/B5PP/bJ7f/1yc4/9gpOj/V5ng/0mM1/9snt//wOPz/67T6/9ITa6/AAAAAAAAAAAAAAAAAAAAAJrC4/9sk9H/W6Dj/1yi5P9gpOf/isv1/0V8yP9snt//arP1/2Kr7v85Y8L/eZnR/9Tf8jAAAAAAAAAAAAAAAAA/f8//J2bB/5bA5P/A4/P/wOPz/8Dk8//A5PP/v+Pz/73g8v+ItN7/J13A/02P1/8AAAAAAAAAAAAAAACUl9BwXXbB/3yp2f8jUbb/X6Xm/1qg5v9uvP//bbz//1+n6f9WkuL/o8vs/5O83/8VHZj/UInY/wAAAAAAAAAAlJfQcC5nyv9Mjdb/P4DP/x4zpv+WwOT/lsDk/5bA5P+Uv+P/JmXB/1yk8v9AgdD/ebTr/w8Yl/8AAAAAAAAAAEuM1v8QJ5//cI3L/8Dk8/+WwOT/UYvZ/1GL2v9Tjdv/UIrZ/6LL7P+iyeX/DR6a/yE4sv8AAAAAAAAAAAAAAABGhNH/baT7/zVct/9ChNL/TY7X/1uh5P9iq+3/ZrDy/2u4/v9ZoOz/W5/j/yNdvP8URK7/AAAAAAAAAAAAAAAAhLLe/zt52/81bdL/M2nL/x5avP9PlN3/UJXe/yJfwv9Qlt3/Y6vr/ytrxP9SkO//UYbL/wAAAAAAAAAAAAAAAEeH0v9epOb/Pm3Z/0eD3v88dNb/M2jK/ypUsv9GiNv/PXbY/yxkxv83btD/LnDH/06P2P8AAAAAAAAAAAAAAABOkdr/XaPl/yFgwv9XmPH/UZHr/1qGyf/N8P//t+H7/yZRsf9zvPr/KF6+/2Or6/9VmuT/AAAAAAAAAAAAAAAAAAAAAF6k5f9osvL/JmXI/1aY+f9FguX/X5zo/0B50v88dtj/Za7t/2av7/9uvP//AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAe6/lv2qz9f9uu/f/abTx/3O99P82bc//XJ74/2269/+Oxfi/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0+H1QNfp+UAvcsn/F1W3/9fp+UDd8P1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAPgPAADgAwAAwAMAAMADAADAAQAAwAEAAIADAACAAwAAgAMAAIADAACAAwAAwAcAAOAPAAD+fwAA//8AAA=="
@@ -51,24 +57,7 @@
           </li>
         </ul>
       </div>
-      <div class="meals">
-        <div class="meal">
-          <div class="meal-header">
-          <span class="random"> Random Recipe </span>
-
-            <img
-              src="https://www.themealdb.com/images/media/meals/1529443236.jpg"
-              alt=""
-            />
-          </div>
-          <div class="meal-body">
-            <h4>Szechuan Beef</h4>
-            <button class="fav-btn active">
-              <i class="fas fa-heart"></i>
-            </button>
-          </div>
-        </div>
-      </div>
+      <div class="meals" id="meals"></div>
     </div>
   </body>
 </html>

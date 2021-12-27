@@ -165,5 +165,6 @@ header button {
 
 .meal-body .fav-btn.active {
   color: red;
+  font-size: 1.5rem;
 }
 /*# sourceMappingURL=style.css.map */
