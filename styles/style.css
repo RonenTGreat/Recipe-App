@@ -69,6 +69,7 @@ header button {
   color: #1d3557;
   font-size: 1.5rem;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 .fav-container {
@@ -125,6 +126,11 @@ header button {
 
 .fav-meals li span {
   font-size: 0.9rem;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 75px;
 }
 
 .meals {
