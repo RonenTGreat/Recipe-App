@@ -72,8 +72,12 @@ header {
   padding: 0;
 
   li {
+    position: relative;
     margin: 5px;
     width: 75px;
+    &:hover .clear {
+      opacity: 1;
+    }
     img {
       border: 2px solid #ffffff;
       border-radius: 50%;
@@ -81,6 +85,18 @@ header {
       width: 70px;
       height: 70px;
       object-fit: cover;
+    }
+
+    .clear {
+      color: #e63946;
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+      position: absolute;
+      opacity: 0;
+      top: -0.6rem;
+      right: -0.6rem;
+      font-size: 1.2rem;
     }
 
     span {
@@ -137,5 +153,3 @@ header {
     }
   }
 }
-
-
