@@ -101,6 +101,7 @@ header button {
   position: relative;
   margin: 5px;
   width: 75px;
+  color: white;
 }
 
 .fav-meals li:hover .clear {
