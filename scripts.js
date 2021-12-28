@@ -1,8 +1,8 @@
-const meals = document.getElementById("meals");
+const mealsElement = document.getElementById("meals");
 const favoriteContainer = document.getElementById("fav-meals");
 
-const searchTerm = document.getElementById('search-term');
-const searchBtn = document.getElementById('search');
+const searchTerm = document.getElementById("search-term");
+const searchBtn = document.getElementById("search");
 
 getRandomMeal();
 fetchFavMeals();
@@ -76,7 +76,7 @@ function addMeal(mealData, random = false) {
     fetchFavMeals();
   });
 
-  meals.appendChild(meal);
+  mealsElement.appendChild(meal);
 }
 
 function addMealLS(mealId) {
@@ -135,11 +135,15 @@ function addMealFav(mealData) {
   favoriteContainer.appendChild(favMeal);
 }
 
-
-searchBtn.addEventListener('click', async () => {
+searchBtn.addEventListener("click", async () => {
+  mealsElement.innerHTML = "";
   const search = searchTerm.value;
 
   const meals = await getMealsBySearch(search);
 
-  meals.
+  if (meals) {
+    meals.forEach((meal) => {
+      addMeal(meal);
+    });
+  }
 });
