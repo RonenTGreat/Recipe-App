@@ -198,7 +198,7 @@ header button {
 }
 
 .meal-body .fav-btn.active {
-  color: red;
+  color: #e63946;
   font-size: 1.5rem;
 }
 /*# sourceMappingURL=style.css.map */
