@@ -147,3 +147,18 @@ searchBtn.addEventListener("click", async () => {
     });
   }
 });
+
+searchTerm.addEventListener("keyup", async (event) => {
+  if (event.key == "Enter") {
+    mealsElement.innerHTML = "";
+    const search = searchTerm.value;
+
+    const meals = await getMealsBySearch(search);
+
+    if (meals) {
+      meals.forEach((meal) => {
+        addMeal(meal);
+      });
+    }
+  }
+});
