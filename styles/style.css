@@ -201,4 +201,58 @@ header button {
   color: #e63946;
   font-size: 1.5rem;
 }
+
+.popup-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.popup {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 0 2rem;
+  position: relative;
+  max-width: 600px;
+  width: 100%;
+}
+
+.popup img {
+  border-radius: 20px;
+}
+
+.popup h1 {
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  background-color: #4158d0;
+  background-image: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
+  border-radius: 20px;
+}
+
+.popup .close-popup {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  position: absolute;
+  top: 0.1rem;
+  right: 0.02rem;
+}
 /*# sourceMappingURL=style.css.map */
