@@ -14,7 +14,7 @@ A recipe app created using HTML, Sass and JavaScript.
 
 ### Links
 
-- Live Site URL: [https://mynft.netlify.app/](https://mynft.netlify.app/)
+- Live Site URL: [https://cookme.ronenhammond.me/](https://cookme.ronenhammond.me/)
 
 ## My process
 
