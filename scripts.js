@@ -71,7 +71,9 @@ function addMeal(mealData, random = false) {
   btn.addEventListener("click", () => {
     if (btn.classList.contains("active")) {
       removeMealLS(mealData.idMeal);
-      btn.classList.remove("active");
+      // btn.classList.remove("active");
+      ["active", "animate__bounceIn"].map((v) => btn.classList.remove(v));
+      
     } else {
       addMealLS(mealData.idMeal);
       ["active", "animate__bounceIn"].map((v) => btn.classList.toggle(v));
