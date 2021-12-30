@@ -173,6 +173,7 @@ header button {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  cursor: pointer;
 }
 
 .meal-header .random {

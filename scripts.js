@@ -66,6 +66,7 @@ function addMeal(mealData, random = false) {
     `;
 
   const btn = meal.querySelector(".meal-body .fav-btn");
+  const img = meal.querySelector(".meal-header img");
 
   btn.addEventListener("click", () => {
     if (btn.classList.contains("active")) {
@@ -79,7 +80,7 @@ function addMeal(mealData, random = false) {
     fetchFavMeals();
   });
 
-  meal.addEventListener("click", () => {
+  img.addEventListener("click", () => {
     showMealInfo(mealData);
   });
 
