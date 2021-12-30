@@ -139,11 +139,29 @@ function addMealFav(mealData) {
     fetchFavMeals();
   });
 
+    favMeal.addEventListener("click", () => {
+      showMealInfo(mealData);
+    });
+
   favoriteContainer.appendChild(favMeal);
 }
 
 function showMealInfo(mealData) {
+mealInfoElement.innerHTML = "";
+
   const mealElement = document.createElement("div");
+
+  const ingredients = [];
+
+    for (let i = 1; i <= 20; i++) {
+      if(mealData['strIngredient' + i]){
+        ingredients.push(`${mealData['strIngredient' + i]} - ${mealData["strMeasure" + i]}`);
+      }
+    else{
+      break;
+    }
+  }
+
   mealElement.innerHTML = `   
           <h1>${mealData.strMeal}</h1>
           <img
@@ -153,6 +171,11 @@ function showMealInfo(mealData) {
           <p>
             ${mealData.strInstructions}
           </p>
+          <h3>Ingredients:</h3>
+          <ul>
+            ${ingredients.map((ing) => `<li>${ing}</li>`).join("")}
+          </ul>
+
           `;
 
   mealInfoElement.appendChild(mealElement);
@@ -191,3 +214,4 @@ searchTerm.addEventListener("keyup", async (event) => {
 popupCloseBtn.addEventListener("click", () => {
   mealPopup.classList.add("hidden");
 });
+
